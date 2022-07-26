@@ -34,8 +34,8 @@ public class CalculoActivity extends AppCompatActivity {
         TimePickerDialog recogerHora = new TimePickerDialog(this, (view, horaDia, minutos) -> {
             h1 = horaDia;
             m1 = minutos;
-            String horaF = (horaDia < 10) ? String.valueOf("0" + horaDia) : String.valueOf(horaDia);
-            String minutoF = (minutos < 10) ? String.valueOf("0" + minutos) : String.valueOf(minutos);
+            String horaF = (horaDia < 10) ? "0" + horaDia : String.valueOf(horaDia);
+            String minutoF = (minutos < 10) ? "0" + minutos : String.valueOf(minutos);
             String AM_PM = (horaDia < 12) ? "a.m." : "p.m.";
             Toast.makeText(getApplication(), horaF + ":" + minutoF + " " + AM_PM, Toast.LENGTH_LONG).show();
             ha.setText(horaF + ":" + minutoF + AM_PM);
@@ -53,8 +53,8 @@ public class CalculoActivity extends AppCompatActivity {
         TimePickerDialog recogerHora = new TimePickerDialog(this, (view, horaDia, minutos) -> {
             h2 = horaDia;
             m2 = minutos;
-            String horaF = (horaDia < 10) ? String.valueOf("0" + horaDia) : String.valueOf(horaDia);
-            String minutoF = (minutos < 10) ? String.valueOf("0" + minutos) : String.valueOf(minutos);
+            String horaF = (horaDia < 10) ? "0" + horaDia : String.valueOf(horaDia);
+            String minutoF = (minutos < 10) ? "0" + minutos : String.valueOf(minutos);
             String AM_PM = (horaDia < 12) ? "a.m." : "p.m.";
             Toast.makeText(getApplication(), horaF + ":" + minutoF + " " + AM_PM, Toast.LENGTH_LONG).show();
             hb.setText(horaF + ":" + minutoF + AM_PM);
@@ -84,9 +84,7 @@ public class CalculoActivity extends AppCompatActivity {
     }
     public void descanso() {
         long etd = 0, hetd = 0, metd = 0;
-        final Calendar cal = Calendar.getInstance();
-        final int hora = cal.get(Calendar.HOUR_OF_DAY);
-        final int minuto = cal.get(Calendar.MINUTE);
+
         if (h1 >= 6  && h2 >= 6) {
             if (h == 6) {
                 etd = ((h2 + 8) * 60) + m2 + 45;
@@ -109,10 +107,32 @@ public class CalculoActivity extends AppCompatActivity {
             } else if (h == 16) {
                 etd = ((h2 + 18) * 60) + m2 + 45;
             }
-        }else if (h1 >= 3 || h2 <=3){
+        }else if (h1 <= 3 && h2 <3 || h2 >= 9 ){
+            if (h == 6) {
+                etd = ((h2 + 12) * 60) + m2 + 45;
+            } else if (h == 7 || h == 8) {
+                etd = ((h2 + 14) * 60) + m2 + 45;
+            } else if (h == 9) {
+                etd = ((h2 + 15) * 60) + m2 + 45;
+            } else if (h == 10) {
+                etd = ((h2 + 16) * 60) + m2 + 45;
+            } else if (h == 11) {
+                etd = ((h2 + 17) * 60) + m2 + 45;
+            } else if (h == 12) {
+                etd = ((h2 + 18) * 60) + m2 + 45;
+            } else if (h == 13) {
+                etd = ((h2 + 18) * 60) + m2 + 45;
+            } else if (h == 14) {
+                etd = ((h2 + 19) * 60) + m2 + 45;
+            } else if (h == 15) {
+                etd = ((h2 + 19) * 60) + m2 + 45;
+            } else if (h == 16) {
+                etd = ((h2 + 20) * 60) + m2 + 45;
+            }
+        }else {
             if (h == 6) {
                 etd = ((h2 + 10) * 60) + m2 + 45;
-            } else if (h == 8) {
+            } else if (h == 7 || h == 8) {
                 etd = ((h2 + 12) * 60) + m2 + 45;
             } else if (h == 9) {
                 etd = ((h2 + 13) * 60) + m2 + 45;
@@ -131,28 +151,7 @@ public class CalculoActivity extends AppCompatActivity {
             } else if (h == 16) {
                 etd = ((h2 + 18) * 60) + m2 + 45;
             }
-        }else {
-            if (h == 6) {
-            etd = ((h2 + 12) * 60) + m2 + 45;
-        } else if (h == 8) {
-            etd = ((h2 + 14) * 60) + m2 + 45;
-        } else if (h == 9) {
-            etd = ((h2 + 15) * 60) + m2 + 45;
-        } else if (h == 10) {
-            etd = ((h2 + 16) * 60) + m2 + 45;
-        } else if (h == 11) {
-            etd = ((h2 + 17) * 60) + m2 + 45;
-        } else if (h == 12) {
-            etd = ((h2 + 18) * 60) + m2 + 45;
-        } else if (h == 13) {
-            etd = ((h2 + 18) * 60) + m2 + 45;
-        } else if (h == 14) {
-            etd = ((h2 + 19) * 60) + m2 + 45;
-        } else if (h == 15) {
-            etd = ((h2 + 19) * 60) + m2 + 45;
-        } else if (h == 16) {
-            etd = ((h2 + 20) * 60) + m2 + 45;
-        }
+
 
                 }
         hetd = etd  / 60;

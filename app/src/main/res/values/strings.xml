@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">CalculadoraVuelo</string>
-    <string name="bienvenida">¡Bienvenido a la Calculadora de Vuelo! </string>
+    <string name="bienvenida">¡Bienvenidos a la Calculadora de Vuelo! </string>
     <string name="iniciar">Comencemos</string>
 </resources>
