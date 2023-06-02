@@ -1,12 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CalculadoraVuelo</string>
-    <string name="bienvenida">¡Calculadora de Vuelo! </string>
-    <string name="iniciar">Comencemos</string>
     <string name="descanso_m_nimo">Descanso Mínimo</string>
     <string name="vencimiento_cab">Vencimiento Cab</string>
     <string name="vencimiento_inter">Vencimiento Inter</string>
     <string name="decreto_877">Decreto 877</string>
     <string name="ayuda">Ayuda</string>
-
-
 </resources>

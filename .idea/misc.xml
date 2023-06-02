@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/drawable/custom_botton.xml" value="0.1955" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/font/.xml" value="0.284375" />
         <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/activity_calculo.xml" value="0.264" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/activity_calculo_cab.xml" value="0.1" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/activity_help.xml" value="0.22871376811594202" />
         <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/activity_main.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/activity_main2.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/activity_vencimiento_cab.xml" value="0.21829710144927536" />
         <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/calculo_activity.xml" value="0.21941896024464833" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/layout/content_main.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/nicod/AndroidStudioProjects/CalculadoraVuelo/app/src/main/res/menu/menu_principal.xml" value="0.253125" />
       </map>
     </option>
   </component>

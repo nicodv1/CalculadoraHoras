@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/avion"
+    android:background="@drawable/relojavion"
 
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/bienvenida"
-        android:layout_width="373dp"
-        android:layout_height="103dp"
+        android:layout_width="328dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
         android:height="50dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/bienvenida"
@@ -21,23 +22,12 @@
         android:visibility="visible"
         app:autoSizeMaxTextSize="?android:attr/windowTitleSize"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
         tools:visibility="visible" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="157dp"
-        android:layout_height="64dp"
-        android:onClick="goToCalculoActivity"
-        android:text="@string/iniciar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bienvenida"
-        app:layout_constraintVertical_bias="0.914" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

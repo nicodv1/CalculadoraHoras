@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/menu_home"/>
+    <item
+        android:id="@+id/menu_des"
+        android:icon="@android:drawable/ic_menu_send"
+
+        android:title="@string/descanso_m_nimo" />
+    <item android:title="@string/vencimiento_cab"
+            android:id="@+id/menu_cab" />
+    <item android:title="@string/vencimiento_inter"
+            android:id="@+id/menu_int" />
+    <item android:title="@string/decreto_877"
+            android:id="@+id/decreto"/>
+    <item android:title="@string/ayuda"
+            android:id="@+id/help"/>
+</menu>
